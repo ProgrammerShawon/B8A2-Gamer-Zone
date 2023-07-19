@@ -259,6 +259,12 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 250px;
 }
+.play_instantly_heading{ 
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  justify-content: center;
+}
 .play_instantly_heading h1 {
   text-align: right;
   color: #0b0223;
@@ -452,9 +458,15 @@ main {
   .funny_videos_section .funny_videos_body h1 {
     font-size: 38px;
   }
+  .funny_videos_section .funny_videos_body .video_container .video p {
+    text-align: center;
+  }
   .play_instantly_body {
     grid-template-columns: 1fr;
     gap: 75px;
+  }
+  .play_instantly_heading{
+    align-items: center;
   }
   .play_instantly_heading h1 {
     text-align: center;
@@ -558,6 +570,9 @@ main {
   .play_instantly_body {
     grid-template-columns: 1fr;
     gap: 75px;
+  }
+  .play_instantly_heading{
+    align-items: center;
   }
   .play_instantly_heading h1 {
     text-align: center;
