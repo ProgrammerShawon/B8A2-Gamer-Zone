@@ -170,6 +170,69 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 24px;
 }
+.funny_videos_section
+  .funny_videos_body
+  .video_container
+  .video
+  .img_container {
+  width: 100%;
+  position: relative;
+}
+.funny_videos_section .funny_videos_body .video_container .video .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 12;
+  display: none;
+}
+.funny_videos_section .funny_videos_body .video_container .video {
+  cursor: pointer;
+}
+.funny_videos_section
+  .funny_videos_body
+  .video_container
+  .video
+  .background_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 15px;
+  width: 100%;
+  height: 99%;
+  background-color: #00000070;
+  z-index: 10;
+  display: none;
+}
+.funny_videos_section .funny_videos_body .video_container .video:hover .overlay,
+.funny_videos_section
+  .funny_videos_body
+  .video_container
+  .video:hover
+  .background_overlay {
+  display: flex;
+}
+.funny_videos_section .funny_videos_body .video_container .video .overlay img {
+  width: 48px;
+  height: 48px;
+}
+.funny_videos_section .funny_videos_body .video_container .video .overlay span {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .funny_videos_section .funny_videos_body .video_container .video img {
   width: 100%;
 }
@@ -182,6 +245,171 @@ main {
 }
 
 /*funny videos end */
+/*Play Instantly Section Start */
+
+.play_instantly_section {
+  background: #fff;
+  padding-bottom: 150px;
+}
+.play_instantly_body {
+  max-width: 1350px;
+  margin: auto;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 250px;
+}
+.play_instantly_heading h1 {
+  text-align: right;
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.play_instantly_heading span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play_instantly_heading p {
+  color: #534c64;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 24px;
+}
+.play_instantly_img {
+  width: 100%;
+  position: relative;
+}
+.play_instantly_img .play_instantly_bg_img {
+  width: 100%;
+}
+
+.play_instantly_img .absolute_image {
+  position: absolute;
+  bottom: -100px;
+
+  left: -159px;
+}
+/* Play Instantly Section  End */
+/* Games Section  Start */
+.games_section {
+  background: #FFF9FC;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.games_body {
+  max-width: 1350px;
+  margin: auto;
+  margin-bottom: 50px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+.games_body button:nth-child(6),
+.games_body button:nth-child(7),
+.games_body button:nth-child(8),
+.games_body button:nth-child(9) {
+  position: relative;
+  right: -55%;
+}
+.games_body .all_games {
+  color: #0b0223;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+}
+.games_body .all_games:hover {
+  border: 1px solid #ff42a5;
+  color: #ff42a5;
+}
+
+.games_body .all_games img {
+  width: 50px;
+  height: 50px;
+}
+/* Games Section  End */
+
+/* Footer section start */
+.footer_section {
+  background: #0b0223;
+  padding-bottom: 130px;
+}
+.footer_body {
+  max-width: 1350px;
+  margin: auto;
+  padding: 0px 20px;
+  color: #fff;
+}
+.footer_logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.footer_section .footer_body .footer_logo span {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  font-weight: 700;
+}
+.footer_section .footer_body .footer_logo p {
+  font-size: 45px;
+  font-weight: 700;
+}
+.footer_section .footer_body .footer_menu {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 66px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer_section .footer_body .social_media {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 66px;
+}
+.footer_section .footer_body .social_media img {
+  width: 40px;
+  height: 40px;
+}
+.footer_section .footer_body .footer_links {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 74px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer_section .footer_body .footer_copyright {
+  text-align: center;
+  padding-top: 28px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+/* Footer section end */
 
 /* Mobile responsive */
 @media screen and (max-width: 767px) {
@@ -224,6 +452,74 @@ main {
   .funny_videos_section .funny_videos_body h1 {
     font-size: 38px;
   }
+  .play_instantly_body {
+    grid-template-columns: 1fr;
+    gap: 75px;
+  }
+  .play_instantly_heading h1 {
+    text-align: center;
+  }
+  .play_instantly_heading p {
+    text-align: center;
+  }
+  .play_instantly_img {
+    width: 70%;
+    margin: auto;
+  }
+  .play_instantly_img .absolute_image {
+    width: 60%;
+    bottom: -70px;
+    left: -59px;
+  }
+  .games_body {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer_section .footer_body .footer_menu {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 35px;
+  }
+  .footer_section .footer_body .social_media {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 35px;
+  }
+  .footer_section .footer_body .footer_links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 30px;
+    place-items: center;
+  }
+  .footer_section .footer_body .footer_copyright {
+    padding-top: 60px;
+  }
+  .games_body {
+    gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+  }
+  .games_body .all_games {
+    font-size: 10px;
+  }
+  .games_body .all_games img {
+    width: 20px;
+    height: 20px;
+  }
+  .games_body button:nth-child(6),
+  .games_body button:nth-child(7),
+  .games_body button:nth-child(8),
+  .games_body button:nth-child(9) {
+    position: relative;
+    right: 0%;
+  }
 }
 
 /* Tablet responsive */
@@ -258,6 +554,52 @@ main {
     grid-template-columns: 1fr 1fr;
     row-gap: 74px;
     column-gap: 30px;
+  }
+  .play_instantly_body {
+    grid-template-columns: 1fr;
+    gap: 75px;
+  }
+  .play_instantly_heading h1 {
+    text-align: center;
+  }
+  .play_instantly_heading p {
+    text-align: center;
+  }
+  .play_instantly_img {
+    width: 70%;
+    margin: auto;
+  }
+  .play_instantly_img .absolute_image {
+    width: 60%;
+    bottom: -70px;
+    left: -59px;
+  }
+
+  .footer_section .footer_body .footer_menu {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    row-gap: 35px;
+  }
+  .footer_section .footer_body .footer_menu p:nth-child(5) {
+    grid-column: 1 / 3;
+  }
+  .footer_section .footer_body .footer_menu p:nth-child(6) {
+    grid-column: 3/5;
+  }
+  .games_body {
+    gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+  }
+  .games_body button:nth-child(6),
+  .games_body button:nth-child(7),
+  .games_body button:nth-child(8),
+  .games_body button:nth-child(9) {
+    position: relative;
+    right: 0%;
   }
 }
 
