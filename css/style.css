@@ -513,13 +513,13 @@ main {
     padding-top: 60px;
   }
   .games_body {
-    gap: 1em;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     place-items: center;
   }
   .games_body .all_games {
-    font-size: 10px;
+    font-size: 8px;
   }
   .games_body .all_games img {
     width: 20px;
