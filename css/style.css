@@ -398,6 +398,11 @@ main {
   width: 40px;
   height: 40px;
 }
+.social_media a{
+  background:transparent;
+  border: 0;
+  text-decoration: none;
+}
 .footer_section .footer_body .footer_links {
   display: flex;
   gap: 60px;
