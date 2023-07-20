@@ -259,7 +259,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 250px;
 }
-.play_instantly_heading{ 
+.play_instantly_heading {
   display: flex;
   align-items: end;
   flex-direction: column;
@@ -303,7 +303,7 @@ main {
 /* Play Instantly Section  End */
 /* Games Section  Start */
 .games_section {
-  background: #FFF9FC;
+  background: #fff9fc;
   padding-top: 150px;
   padding-bottom: 150px;
   padding-left: 20px;
@@ -398,8 +398,8 @@ main {
   width: 40px;
   height: 40px;
 }
-.social_media a{
-  background:transparent;
+.social_media a {
+  background: transparent;
   border: 0;
   text-decoration: none;
 }
@@ -470,7 +470,7 @@ main {
     grid-template-columns: 1fr;
     gap: 75px;
   }
-  .play_instantly_heading{
+  .play_instantly_heading {
     align-items: center;
   }
   .play_instantly_heading h1 {
@@ -576,7 +576,7 @@ main {
     grid-template-columns: 1fr;
     gap: 75px;
   }
-  .play_instantly_heading{
+  .play_instantly_heading {
     align-items: center;
   }
   .play_instantly_heading h1 {
